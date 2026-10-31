@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 – Dynamic Web Fundamentals – Olayioye Opeyemi</title>
+    <meta name="description"
+        content="WDD 131 – Dynamic Web Fundamentals. Olayioye Opeyemi. Course landing page covering HTML, CSS, JavaScript, dynamic web fundamentals, and personal introduction from Ibadan, Nigeria.">
+    <meta name="author" content="Olayioye Opeyemi">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Open+Sans:wght@400;500&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <span id="course-title">WDD 131 – Dynamic Web Fundamentals</span>
+        <nav>
+            <ul>
+                <li><a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a></li>
+                <li><a href="https://byupw.instructure.com/" target="_blank" rel="noopener">Canvas</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/ot/isa/55?lang=eng&id=p8-9#p8"
+                        target="_blank" rel="noopener">Scripture</a></li>
+                <li><a href="project/index.html">Final Project</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Olayioye Opeyemi</h1>
+        <p class="intro">Welcome to my WDD 131 course landing page. I'm excited to build dynamic, responsive websites
+            while studying from Ibadan, Nigeria.</p>
+
+        <div class="cards-grid">
+            <section class="card">
+                <h2>Learning Dynamic Web Fundamentals</h2>
+                <div class="card-body">
+                    <p>In this course I am strengthening my skills in HTML structure, CSS layout with Flexbox and Grid,
+                        and JavaScript that makes pages interactive. Every assignment helps me create cleaner, more
+                        accessible, and more dynamic websites that work well on any device.</p>
+                    <img src="images/coding.jpg" alt="HTML, CSS, and JavaScript code on a computer screen" width="600"
+                        height="400" loading="lazy">
+                </div>
+            </section>
+
+            <section class="card">
+                <h2>Life and Service in Ibadan</h2>
+                <div class="card-body">
+                    <p>Outside of coding I enjoy preparing Sunday School lessons, connecting with family and friends,
+                        and exploring the energy of Ibadan. These experiences keep me grounded and motivated to use
+                        technology in meaningful ways that can bless others.</p>
+                    <img src="images/lagos.jpg" alt="Modern skyline of Lagos, Nigeria with waterfront and buildings"
+                        width="800" height="500" loading="lazy">
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Olayioye Opeyemi | Ibadan, Nigeria</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
