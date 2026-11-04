@@ -1,0 +1,39 @@
+@media screen and (min-width: 700px) {
+
+    /* Hide hamburger button on larger screens */
+    #menu {
+        display: none;
+    }
+
+    /* Show navigation as a horizontal flex row */
+    .navigation {
+        display: flex;
+        flex-direction: row;
+        position: static;
+        width: auto;
+        background-color: transparent;
+    }
+
+    .navigation a {
+        border-bottom: none;
+        padding: 0.5rem 1rem;
+    }
+
+    .navigation a:hover {
+        background-color: #2c5282;
+        border-radius: 4px;
+    }
+
+    /* Gallery becomes multiple columns */
+    .gallery {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    .header-title {
+        font-size: 1.8rem;
+    }
+}

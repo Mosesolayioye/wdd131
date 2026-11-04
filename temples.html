@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Album | WDD 131</title>
+    <meta name="description"
+        content="A responsive picture album of temples featuring a hamburger menu and CSS Grid layout.">
+    <meta name="author" content="Wemimo">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css">
+    <script src="scripts/temples.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-title">Temple Album</div>
+        <button id="menu" aria-label="Toggle navigation menu">☰</button>
+        <nav class="navigation">
+            <a href="#" class="active">Home</a>
+            <a href="#">Old</a>
+            <a href="#">New</a>
+            <a href="#">Large</a>
+            <a href="#">Small</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Temple Album</h1>
+        <div class="gallery">
+            <figure>
+                <img src="images/coding.jpg" alt="Temple image" width="400" height="250">
+                <figcaption>Salt Lake Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/coding.jpg" alt="Temple image" width="400" height="250">
+                <figcaption>Nauvoo Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/coding.jpg" alt="Temple image" width="400" height="250">
+                <figcaption>Provo City Center Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/coding.jpg" alt="Temple image" width="400" height="250">
+                <figcaption>Bountiful Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/coding.jpg" alt="Temple image" width="400" height="250">
+                <figcaption>Logan Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/coding.jpg" alt="Temple image" width="400" height="250">
+                <figcaption>Manti Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/coding.jpg" alt="Temple image" width="400" height="250">
+                <figcaption>St. George Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/coding.jpg" alt="Temple image" width="400" height="250">
+                <figcaption>Jordan River Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/coding.jpg" alt="Temple image" width="400" height="250">
+                <figcaption>Payson Temple</figcaption>
+            </figure>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Wemimo, Lagos, Nigeria</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
