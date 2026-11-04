@@ -8,6 +8,10 @@ body {
     line-height: 1.6;
 }
 
+nav {
+    display: flex;
+}
+
 /* Header */
 header {
     background-color: #1a365d;
