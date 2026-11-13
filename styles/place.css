@@ -1,0 +1,142 @@
+/* Global CSS Variables */
+:root {
+    --primary-color: #008751;
+    --secondary-color: #ffffff;
+    --text-color: #1a1a1a;
+    --accent-color: #f4f4f4;
+    --heading-font: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    --body-font: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Reset & Base */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--body-font);
+    color: var(--text-color);
+    background-color: var(--secondary-color);
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    text-align: center;
+    padding: 1.5rem 1rem;
+}
+
+header h1 {
+    font-family: var(--heading-font);
+    font-size: 2.2rem;
+    margin: 0;
+}
+
+/* Hero */
+.hero {
+    width: 100%;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    max-height: 420px;
+}
+
+/* Content Grid */
+.content-grid {
+    display: grid;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Weather Section */
+.weather {
+    background-color: var(--accent-color);
+    padding: 1.2rem;
+    border-radius: 8px;
+    border-left: 5px solid var(--primary-color);
+}
+
+.weather h2 {
+    color: var(--primary-color);
+    margin-bottom: 0.8rem;
+    position: relative;
+}
+
+.weather-icon-mobile {
+    width: 70px;
+    height: 70px;
+    display: block;
+    margin-bottom: 0.8rem;
+}
+
+.weather p {
+    margin: 0.4rem 0;
+}
+
+/* Info Section */
+.info {
+    background-color: #f9f9f9;
+    padding: 1.2rem;
+    border-radius: 8px;
+}
+
+.info h2,
+.info h3 {
+    color: var(--primary-color);
+    margin-bottom: 0.6rem;
+}
+
+.info ul {
+    margin-left: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.info li {
+    margin: 0.3rem 0;
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+    font-size: 0.95rem;
+}
+
+/* Media Query - Wider View */
+@media (min-width: 700px) {
+    header h1 {
+        font-size: 2.8rem;
+    }
+
+    .content-grid {
+        grid-template-columns: 1fr 1.5fr;
+        align-items: start;
+    }
+
+    .weather-icon-mobile {
+        display: none;
+    }
+
+    .weather h2::after {
+        content: "⛅";
+        margin-left: 0.5rem;
+        font-size: 1.4rem;
+    }
+
+    .hero img {
+        max-height: 500px;
+    }
+}

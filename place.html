@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="WDD 131 – Dynamic Web Fundamentals. Discover Nigeria – culture, attractions, and weather information.">
+    <meta name="author" content="Olayioye Opeyemi">
+    <title>Nigeria | WDD 131</title>
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Nigeria</h1>
+    </header>
+
+    <main>
+        <!-- Hero Section with responsive WebP images using picture/srcset -->
+        <section class="hero">
+            <picture>
+                <source media="(max-width: 700px)" srcset="images/nigeria-hero-small.webp">
+                <source media="(min-width: 701px)" srcset="images/nigeria-hero-large.webp">
+                <img src="images/nigeria-hero-large.webp" alt="Beautiful landscape of Nigeria" width="1200"
+                    height="600">
+            </picture>
+        </section>
+
+        <!-- Content Grid (Weather + Info) -->
+        <section class="content-grid">
+            <!-- Weather Section -->
+            <section class="weather">
+                <h2>Weather</h2>
+                <!-- Mobile: SVG icon will be placed here via CSS or img. Wider view uses pseudo-element -->
+                <img src="images/weather-icon.svg" alt="Weather icon" class="weather-icon-mobile">
+                <p><strong>Temperature:</strong> <span id="temperature">28°C</span></p>
+                <p><strong>Conditions:</strong> Partly Cloudy</p>
+                <p><strong>Wind Speed:</strong> <span id="wind-speed">12 km/h</span></p>
+                <p><strong>Wind Chill:</strong> <span id="wind-chill">N/A</span></p>
+            </section>
+
+            <!-- Additional Information Section -->
+            <section class="info">
+                <h2>About Nigeria</h2>
+                <ul>
+                    <li><strong>Capital:</strong> Abuja</li>
+                    <li><strong>Population:</strong> Over 220 million</li>
+                    <li><strong>Area:</strong> 923,768 km²</li>
+                    <li><strong>Official Language:</strong> English</li>
+                    <li><strong>Currency:</strong> Naira (₦)</li>
+                </ul>
+                <h3>Top Attractions</h3>
+                <ul>
+                    <li>Yankari National Park</li>
+                    <li>Olumo Rock, Abeokuta</li>
+                    <li>Nike Art Gallery, Lagos</li>
+                    <li>Zuma Rock</li>
+                </ul>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Olayioye Opeyemi | Nigeria</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
