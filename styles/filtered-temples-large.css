@@ -1,21 +1,28 @@
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 768px) {
+    #menu {
+        display: none !important;
+    }
+
+    .navigation {
+        display: flex !important;
+        flex-direction: row;
+        justify-content: center;
+        background-color: transparent;
+    }
+
+    .navigation a {
+        margin: 0 0.4rem;
+        padding: 0.5rem 1rem;
+    }
+
     .temple-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 1.5rem;
     }
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 1000px) {
     .temple-grid {
         grid-template-columns: repeat(3, 1fr);
-    }
-
-    nav {
-        display: flex;
-        justify-content: center;
-    }
-
-    nav a {
-        margin: 0 0.3rem;
     }
 }

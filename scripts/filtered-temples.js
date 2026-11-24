@@ -92,6 +92,8 @@ function displayTemples(templeList) {
         img.src = temple.imageUrl;
         img.alt = temple.templeName;
         img.loading = "lazy";
+        img.width = 400;
+        img.height = 250;
 
         const figcaption = document.createElement("figcaption");
         figcaption.innerHTML = `
